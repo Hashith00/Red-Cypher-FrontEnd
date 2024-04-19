@@ -4,6 +4,7 @@ import redLogo from "./assets/Red Cypher Font with logo 1.0.png";
 import redSmallLogo from "./assets/Red Cypher Logo - white removed.png";
 import "./App.css";
 import axios from "axios";
+import DownloadButton from "./components/downloadButton.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -39,6 +40,7 @@ function App() {
           count is {count}
         </button>
         <button onClick={() => getIntoHackersDen()}>Hackers Den</button>
+        <DownloadButton filePath="/assets/data_pdf.pdf" fileName="Data file" />
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
